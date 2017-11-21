@@ -4,7 +4,8 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777;
-    background: url("../images/concrete_seamless.png");
+    background: url("../images/background-img.jpg");
+    height: 100%;
     
   }
   * {
@@ -16,6 +17,7 @@ body {
     max-width: 980px;
     margin: 0 auto;
     clear: both;
+    
   }
   h1,
   h2,
@@ -31,7 +33,7 @@ body {
   h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
-    color: #4aaaa5;
+    color: #f65b60;
   }
   h1 {
     padding-bottom: 20px;
@@ -65,7 +67,7 @@ body {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    background: #4aaaa5;
+    background: #f65b60;
   }
   nav {
     float: right;
@@ -92,7 +94,7 @@ body {
     color: #ccc;
     text-align: center;
     background: #666;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid #f65b60;
   }
   /* sidebar */
   .sidebar {
@@ -153,13 +155,13 @@ body {
     position: absolute;
     bottom: 20px;
     width: 100%;
-    padding: 15px;
+    padding: 1px;
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
     color: #fff;
     text-align: center;
-    background: #4aaaa5;
+    background: #f65b60;
     border-bottom: 0;
   }
   .auth-image {
@@ -239,6 +241,12 @@ body {
         width: 0 auto;
    }
 
+   .work {
+       float: left;
+   }
+
+
+
    
    
 }
@@ -246,21 +254,27 @@ body {
 
   @media screen and (max-width: 768px) {
     
+    
+
+
    #main-container {
-       width: 100%;
+       width: 768px;
        padding: 20px;
-       height: auto;
+       
    }
 
    .container {
        width: 768px;
+       
    }
 
    .main-section {
        width: 100%;
        margin-top: 100px;
-       margin-left: 0px;
        margin-right: 0px;
+       margin-left: 0px;
+       
+       height: auto;
        
        
     }
@@ -277,12 +291,21 @@ body {
         width: auto;
     }
 
+    #logo {
+        margin-left: 20px;
+    }
+
    
    
 }
 
   @media screen and (max-width: 640px) {
     
+
+    #main-container {
+        max-width: 640px
+    }
+
     .container {
         width: 640px;
     }
@@ -295,6 +318,9 @@ body {
     .main-section {
 
         margin-top: 160px;
+        width: 100%;
+        margin-left: 0 auto;
+        margin-right: 0 auto; 
     }
 
     #logo {
@@ -306,12 +332,21 @@ body {
     nav {
         width: 100%;
         text-align: center;
-        margin-left: 50px;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        padding-left: 170px
     }
 
     .auth-image {
         height: auto;
     }
+
+    .work {
+        float: left;
+        width: 100%;
+        
+    }
+ 
 
   }
 
